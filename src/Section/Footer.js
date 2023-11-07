@@ -21,7 +21,7 @@ function Footer() {
                         <ul className="social">
                             <li>
                                 <a href="#" className="facebook">
-                                    <i ><BiLogoFacebook /></i>
+                                    <i><BiLogoFacebook /></i>
                                 </a>
                             </li>
                             <li>
@@ -58,7 +58,7 @@ function Footer() {
                             <div className="info">Business Hours: From 10:00 To 18:00</div>
                         </div>
                         <div className="line">
-                            <i ><PiPhoneCallThin /></i>
+                            <i><PiPhoneCallThin /></i>
                             <div className="info">
                                 <span>+20123456789</span>
                                 <span>+20198765432</span>

@@ -11,200 +11,89 @@ import { AiOutlineTwitter } from "react-icons/ai";
 import { BiLogoLinkedin } from "react-icons/bi";
 import { BiLogoYoutube } from "react-icons/bi";
 
-function Team(){
-    return(
-<div>
-<div className="team" id="team">
+function Team() {
+
+
+  let TeamDate = [
+    {
+      image: team1,
+      name: "Name",
+      text: "Simple Short Description"
+    },
+    {
+      image: team2,
+      name: "Name",
+      text: "Simple Short Description"
+    },
+    {
+      image: team3,
+      name: "Name",
+      text: "Simple Short Description"
+    },
+    {
+      image: team4,
+      name: "Name",
+      text: "Simple Short Description"
+    },
+    {
+      image: team5,
+      name: "Name",
+      text: "Simple Short Description"
+    },
+    {
+      image: team6,
+      name: "Name",
+      text: "Simple Short Description"
+    },
+    {
+      image: team7,
+      name: "Name",
+      text: "Simple Short Description"
+    },
+    {
+      image: team8,
+      name: "Name",
+      text: "Simple Short Description"
+    }
+  ]
+
+  return (
+    <div>
+      <div className="team" id="team">
         <h2 className="main-title">Team Members</h2>
         <div className="container">
-          <div className="box">
-            <div className="data">
-              <img src={team1} alt="" />
-              <div className="social">
-                <a href="#">
-                  <i ><BiLogoFacebook /></i>
-                </a>
-                <a href="#">
-                  <i><AiOutlineTwitter /></i>
-                </a>
-                <a href="#">
-                  <i ><BiLogoLinkedin /></i>
-                </a>
-                <a href="#">
-                  <i><BiLogoYoutube /></i>
-                </a>
+          {TeamDate.map(item => {
+            return (
+              <div className="box">
+                <div className="data">
+                  <img src={item.image} alt="" />
+                  <div className="social">
+                    <a href="#">
+                      <i><BiLogoFacebook /></i>
+                    </a>
+                    <a href="#">
+                      <i><AiOutlineTwitter /></i>
+                    </a>
+                    <a href="#">
+                      <i><BiLogoLinkedin /></i>
+                    </a>
+                    <a href="#">
+                      <i><BiLogoYoutube /></i>
+                    </a>
+                  </div>
+                </div>
+                <div className="info">
+                  <h3>{item.name}</h3>
+                  <p>{item.text}</p>
+                </div>
               </div>
-            </div>
-            <div className="info">
-              <h3>Name</h3>
-              <p>Simple Short Description</p>
-            </div>
-          </div>
-          <div className="box">
-            <div className="data">
-              <img src={team2} alt="" />
-              <div className="social">
-                <a href="#">
-                  <i ><BiLogoFacebook /></i>
-                </a>
-                <a href="#">
-                  <i><AiOutlineTwitter /></i>
-                </a>
-                <a href="#">
-                  <i ><BiLogoLinkedin /></i>
-                </a>
-                <a href="#">
-                  <i><BiLogoYoutube /></i>
-                </a>
-              </div>
-            </div>
-            <div className="info">
-              <h3>Name</h3>
-              <p>Simple Short Description</p>
-            </div>
-          </div>
-          <div className="box">
-            <div className="data">
-              <img src={team3} alt="" />
-              <div className="social">
-                <a href="#">
-                  <i ><BiLogoFacebook /></i>
-                </a>
-                <a href="#">
-                  <i><AiOutlineTwitter /></i>
-                </a>
-                <a href="#">
-                  <i ><BiLogoLinkedin /></i>
-                </a>
-                <a href="#">
-                  <i><BiLogoYoutube /></i>
-                </a>
-              </div>
-            </div>
-            <div className="info">
-              <h3>Name</h3>
-              <p>Simple Short Description</p>
-            </div>
-          </div>
-          <div className="box">
-            <div className="data">
-              <img src={team4} alt="" />
-              <div className="social">
-                <a href="#">
-                  <i ><BiLogoFacebook /></i>
-                </a>
-                <a href="#">
-                  <i><AiOutlineTwitter /></i>
-                </a>
-                <a href="#">
-                  <i ><BiLogoLinkedin /></i>
-                </a>
-                <a href="#">
-                  <i><BiLogoYoutube /></i>
-                </a>
-              </div>
-            </div>
-            <div className="info">
-              <h3>Name</h3>
-              <p>Simple Short Description</p>
-            </div>
-          </div>
-          <div className="box">
-            <div className="data">
-              <img src={team5} alt="" />
-              <div className="social">
-                <a href="#">
-                  <i ><BiLogoFacebook /></i>
-                </a>
-                <a href="#">
-                  <i><AiOutlineTwitter /></i>
-                </a>
-                <a href="#">
-                  <i ><BiLogoLinkedin /></i>
-                </a>
-                <a href="#">
-                  <i><BiLogoYoutube /></i>
-                </a>
-              </div>
-            </div>
-            <div className="info">
-              <h3>Name</h3>
-              <p>Simple Short Description</p>
-            </div>
-          </div>
-          <div className="box">
-            <div className="data">
-              <img src={team6} alt="" />
-              <div className="social">
-                <a href="#">
-                  <i ><BiLogoFacebook /></i>
-                </a>
-                <a href="#">
-                  <i><AiOutlineTwitter /></i>
-                </a>
-                <a href="#">
-                  <i ><BiLogoLinkedin /></i>
-                </a>
-                <a href="#">
-                  <i><BiLogoYoutube /></i>
-                </a>
-              </div>
-            </div>
-            <div className="info">
-              <h3>Name</h3>
-              <p>Simple Short Description</p>
-            </div>
-          </div>
-          <div className="box">
-            <div className="data">
-              <img src={team7} alt="" />
-              <div className="social">
-                <a href="#">
-                  <i ><BiLogoFacebook /></i>
-                </a>
-                <a href="#">
-                  <i><AiOutlineTwitter /></i>
-                </a>
-                <a href="#">
-                  <i ><BiLogoLinkedin /></i>
-                </a>
-                <a href="#">
-                  <i><BiLogoYoutube /></i>
-                </a>
-              </div>
-            </div>
-            <div className="info">
-              <h3>Name</h3>
-              <p>Simple Short Description</p>
-            </div>
-          </div>
-          <div className="box">
-            <div className="data">
-              <img src={team8} alt="" />
-              <div className="social">
-                <a href="#">
-                  <i ><BiLogoFacebook /></i>
-                </a>
-                <a href="#">
-                  <i><AiOutlineTwitter /></i>
-                </a>
-                <a href="#">
-                  <i ><BiLogoLinkedin /></i>
-                </a>
-                <a href="#">
-                  <i><BiLogoYoutube /></i>
-                </a>
-              </div>
-            </div>
-            <div className="info">
-              <h3>Name</h3>
-              <p>Simple Short Description</p>
-            </div>
-          </div>
+            )
+          })}
+
         </div>
         <div className="spikes"></div>
       </div>
-</div>
-    )
+    </div>
+  )
 }
 export default Team;

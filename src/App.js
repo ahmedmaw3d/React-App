@@ -61,7 +61,7 @@ function App() {
                     <a href="#work-steps"><i><FaRegClipboard /></i> How It Works</a>
                   </li>
                 </ul>
-                <ul class="links">
+                <ul className="links">
                   <li>
                     <a href="#events"><i ><FaRegCalendarDays /></i> Events</a>
                   </li>
@@ -112,19 +112,6 @@ function App() {
       <Stats/>
       <Discount/>
       <Footer/>
-
-
-
-      
-
-      
-      
-      
-      
-      
-      
-      
-      
     </div>
   );
 }

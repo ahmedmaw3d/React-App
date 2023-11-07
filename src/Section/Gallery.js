@@ -7,41 +7,43 @@ import gallery6 from "../image/gallery-06.png";
 
 
 function Gallery() {
+
+
+    let Gallery = [
+        {
+            image: gallery1
+        },
+        {
+            image: gallery2
+        },
+        {
+            image: gallery3
+        },
+        {
+            image: gallery4
+        },
+        {
+            image: gallery5
+        },
+        {
+            image: gallery6
+        }
+    ];
     return (
         <div>
             <div className="gallery" id="gallery">
                 <h2 className="main-title">Gallery</h2>
                 <div className="container">
-                    <div className="box">
-                        <div className="image">
-                            <img src={gallery1} alt="" />
-                        </div>
-                    </div>
-                    <div className="box">
-                        <div className="image">
-                            <img src={gallery2} alt="" />
-                        </div>
-                    </div>
-                    <div className="box">
-                        <div className="image">
-                            <img src={gallery3} alt="" />
-                        </div>
-                    </div>
-                    <div className="box">
-                        <div className="image">
-                            <img src={gallery4} alt="" />
-                        </div>
-                    </div>
-                    <div className="box">
-                        <div className="image">
-                            <img src={gallery5} alt="" />
-                        </div>
-                    </div>
-                    <div className="box">
-                        <div className="image">
-                            <img src={gallery6} alt="" />
-                        </div>
-                    </div>
+                    {Gallery.map(item => {
+                        return (
+                            <div className="box">
+                                <div className="image">
+                                    <img src={item.image} alt="" />
+                                </div>
+                            </div>
+                        )
+                    })
+                    }
                 </div>
             </div>
         </div>

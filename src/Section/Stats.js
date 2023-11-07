@@ -10,7 +10,7 @@ function Stats() {
                 <h2>Our Awesome Stats</h2>
                 <div className="container">
                     <div className="box">
-                        <i ><CiUser size={30} /></i>
+                        <i><CiUser size={30} /></i>
                         <span className="number" data-goal="150">0</span>
                         <span className="text">Clients</span>
                     </div>
@@ -25,7 +25,7 @@ function Stats() {
                         <span className="text">Countries</span>
                     </div>
                     <div className="box">
-                        <i ><FaMoneyBillAlt size={30} /></i>
+                        <i><FaMoneyBillAlt size={30} /></i>
                         <span className="number" data-goal="500">0</span>
                         <span className="text">Money</span>
                     </div>

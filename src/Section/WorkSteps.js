@@ -3,43 +3,46 @@ import work1 from "../image/work-steps-1.png";
 import work2 from "../image/work-steps-2.png";
 import work3 from "../image/work-steps-3.png";
 function WorkSteps() {
+
+    let Works = [
+        {
+            image: work1,
+            title: "Business Analysis",
+            desc: "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Enim nesciunt obcaecati quisquam quis laborum recusandae debitis vel"
+        },
+        {
+            image: work2,
+            title: "Architecture",
+            desc: "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Enim nesciunt obcaecati quisquam quis laborum recusandae debitis vel"
+        },
+        {
+            image: work3,
+            title: "Developement",
+            desc: "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Enim nesciunt obcaecati quisquam quis laborum recusandae debitis vel"
+        }
+    ]
+
     return (
         <div>
             <div className="work-steps" id="work-steps">
                 <h2 className="main-title">How It Works ?</h2>
                 <div className="container">
-                    <img src={work} alt="" class="image" />
+                    <img src={work} alt="" className="image" />
                     <div className="info">
-                        <div className="box">
-                            <img src={work1} alt="" />
-                            <div className="text">
-                                <h3>Business Analysis</h3>
-                                <p>
-                                    Lorem, ipsum dolor sit amet consectetur adipisicing elit. Enim nesciunt obcaecati quisquam quis laborum
-                                    recusandae debitis vel
-                                </p>
-                            </div>
-                        </div>
-                        <div className="box">
-                            <img src={work2} alt="" />
-                            <div className="text">
-                                <h3>Architecture</h3>
-                                <p>
-                                    Lorem, ipsum dolor sit amet consectetur adipisicing elit. Enim nesciunt obcaecati quisquam quis laborum
-                                    recusandae debitis vel
-                                </p>
-                            </div>
-                        </div>
-                        <div className="box">
-                            <img src={work3} alt="" />
-                            <div className="text">
-                                <h3>Developement</h3>
-                                <p>
-                                    Lorem, ipsum dolor sit amet consectetur adipisicing elit. Enim nesciunt obcaecati quisquam quis laborum
-                                    recusandae debitis vel
-                                </p>
-                            </div>
-                        </div>
+                        {Works.map(item => {
+                            return (
+                                <div className="box">
+                                    <img src={item.image} alt="" />
+                                    <div className="text">
+                                        <h3>{item.title}</h3>
+                                        <p>
+                                            {item.desc}
+                                        </p>
+                                    </div>
+                                </div>
+                            )
+                        })}
+
                     </div>
                 </div>
             </div>

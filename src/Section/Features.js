@@ -2,10 +2,10 @@ import features1 from "../image/features-01.jpg";
 import features2 from "../image/features-02.jpg";
 import features3 from "../image/features-03.jpg";
 
-function Features(){
-    return(
-        <div>
-            <div className="features" id="features">
+function Features() {
+  return (
+    <div>
+      <div className="features" id="features">
         <h2 className="main-title">Features</h2>
         <div className="container">
           <div className="box quality">
@@ -28,7 +28,7 @@ function Features(){
           </div>
         </div>
       </div>
-        </div>
-    )
+    </div>
+  )
 }
 export default Features;

@@ -1,6 +1,24 @@
 import events from "../image/events.png";
 
 function Events() {
+    let Event = [
+        {
+            number: 15,
+            title: "Days"
+        },
+        {
+            number: 80,
+            title: "Days"
+        },
+        {
+            number: 45,
+            title: "minutes"
+        },
+        {
+            number: 55,
+            title: "Seconds"
+        }
+    ]
     return (
         <div>
             <div className="events" id="events">
@@ -11,22 +29,16 @@ function Events() {
                     <img src={events} alt="" />
                     <div className="info">
                         <div className="time">
-                            <div className="unit">
-                                <span className="days">15</span>
-                                <span>Days</span>
-                            </div>
-                            <div className="unit">
-                                <span className="hours">08</span>
-                                <span>Hours</span>
-                            </div>
-                            <div className="unit">
-                                <span className="minutes">45</span>
-                                <span>Minutes</span>
-                            </div>
-                            <div className="unit">
-                                <span className="seconds">55</span>
-                                <span>Seconds</span>
-                            </div>
+                            {Event.map(item => {
+                                return (
+                                    <div className="unit">
+                                        <span className="days">{item.number}</span>
+                                        <span>{item.title}</span>
+                                    </div>
+                                )
+                            })}
+
+
                         </div>
                         <h2 className="title">Tech Masters Event 2021</h2>
                         <p className="description">
