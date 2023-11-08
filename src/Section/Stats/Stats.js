@@ -2,8 +2,9 @@ import { CiUser } from "react-icons/ci";
 import { HiMiniGlobeAsiaAustralia } from "react-icons/hi2";
 import { FaMoneyBillAlt } from "react-icons/fa";
 import { BiCodeAlt } from "react-icons/bi";
+import "./stats.css";
 
-function Stats() {
+const Stats = () => {
     return (
         <div>
             <div className="stats" id="stats">

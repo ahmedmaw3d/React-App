@@ -1,15 +1,15 @@
-import gallery1 from "../image/gallery-01.png";
-import gallery2 from "../image/gallery-02.png";
-import gallery3 from "../image/gallery-03.png";
-import gallery4 from "../image/gallery-04.png";
-import gallery5 from "../image/gallery-05.jpg";
-import gallery6 from "../image/gallery-06.png";
+import gallery1 from "../../image/gallery-01.png";
+import gallery2 from "../../image/gallery-02.png";
+import gallery3 from "../../image/gallery-03.png";
+import gallery4 from "../../image/gallery-04.png";
+import gallery5 from "../../image/gallery-05.jpg";
+import gallery6 from "../../image/gallery-06.png";
+import "./gallery.css";
+
+const Gallery = () => {
 
 
-function Gallery() {
-
-
-    let Gallery = [
+    const gallery = [
         {
             image: gallery1
         },
@@ -34,9 +34,9 @@ function Gallery() {
             <div className="gallery" id="gallery">
                 <h2 className="main-title">Gallery</h2>
                 <div className="container">
-                    {Gallery.map(item => {
+                    {gallery.map(item => {
                         return (
-                            <div className="box">
+                            <div className="box" key={item.image}>
                                 <div className="image">
                                     <img src={item.image} alt="" />
                                 </div>

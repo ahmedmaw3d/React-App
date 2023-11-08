@@ -1,8 +1,9 @@
-import features1 from "../image/features-01.jpg";
-import features2 from "../image/features-02.jpg";
-import features3 from "../image/features-03.jpg";
+import features1 from "../../image/features-01.jpg";
+import features2 from "../../image/features-02.jpg";
+import features3 from "../../image/features-03.jpg";
+import "./features.css";
 
-function Features() {
+const Features = () => {
   return (
     <div>
       <div className="features" id="features">

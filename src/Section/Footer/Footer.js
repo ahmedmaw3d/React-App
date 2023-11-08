@@ -1,17 +1,18 @@
-import gallery1 from "../image/gallery-01.png";
-import gallery2 from "../image/gallery-02.png";
-import gallery3 from "../image/gallery-03.png";
-import gallery4 from "../image/gallery-04.png";
-import gallery5 from "../image/gallery-05.jpg";
-import gallery6 from "../image/gallery-06.png";
+import gallery1 from "../../image/gallery-01.png";
+import gallery2 from "../../image/gallery-02.png";
+import gallery3 from "../../image/gallery-03.png";
+import gallery4 from "../../image/gallery-04.png";
+import gallery5 from "../../image/gallery-05.jpg";
+import gallery6 from "../../image/gallery-06.png";
 import { BiLogoFacebook } from "react-icons/bi";
 import { AiOutlineTwitter } from "react-icons/ai";
 import { BiLogoYoutube } from "react-icons/bi";
 import { FaRegClock } from "react-icons/fa";
 import { PiPhoneCallThin } from "react-icons/pi";
 import { FaMapMarkerAlt } from "react-icons/fa";
+import "./footer.css";
 
-function Footer() {
+const Footer = () => {
     return (
         <div>
             <div className="footer">
@@ -77,7 +78,6 @@ function Footer() {
                 <p className="copyright">Made With &lt;3 By Elzero</p>
             </div>
             <script src="js/main.js"></script>
-
         </div>
     )
 }

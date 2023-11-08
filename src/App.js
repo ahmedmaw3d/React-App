@@ -1,8 +1,6 @@
 import theImage from './image/megamenu.png';
 import Landing from "./image/landing-image.png";
-
 import './app.css';
-
 import { RiArrowDownDoubleFill } from "react-icons/ri";
 import { BiChat } from "react-icons/bi";
 import { BiSolidUser } from "react-icons/bi";
@@ -14,20 +12,20 @@ import { FaRegCalendarDays } from "react-icons/fa6";
 import { FaRegBuilding } from "react-icons/fa6";
 import { AiOutlineCheckCircle } from "react-icons/ai";
 import { FaRegClipboard } from "react-icons/fa";
-import Articles from './Section/Articles';
-import Gallery from './Section/Gallery';
-import Features from './Section/Features';
-import Testimonials from './Section/Testimonials';
-import Team from './Section/Team';
-import Services from './Section/Services';
-import Skills from "./Section/Skills";
-import WorkSteps from"./Section/WorkSteps";
-import Events from './Section/Events';
-import Pricing from './Section/Pricing';
-import Videos from "./Section/Videos"
-import Stats from './Section/Stats';
-import Discount from './Section/Discount';
-import Footer from './Section/Footer';
+import Articles from './Section/Articles/Articles';
+import Gallery from './Section/Gallery/Gallery';
+import Features from './Section/Features/Features';
+import Testimonials from './Section/Testimonials/Testimonials';
+import Team from './Section/Team/Team';
+import Services from './Section/Services/Services';
+import Skills from "./Section/Skills/Skills";
+import WorkSteps from"./Section/WorkSteps/WorkSteps";
+import Events from './Section/Events/Events';
+import Pricing from './Section/Pricing/Pricing';
+import Videos from "./Section/Video/Videos"
+import Stats from './Section/Stats/Stats';
+import Discount from './Section/Discount/Discount';
+import Footer from './Section/Footer/Footer';
 function App() {
   return (
     <div>

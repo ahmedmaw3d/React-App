@@ -1,6 +1,7 @@
-import discount from "../image/discount.png";
+import discount from "../../image/discount.png";
+import "./discount.css";
 
-function Discount() {
+const Discount = () => {
     return (
         <div>
             <div className="discount" id="discount">

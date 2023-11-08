@@ -1,10 +1,11 @@
-import hosting from "../image/hosting-basic.png";
-import advanced from "../image/hosting-advanced.png";
-import professional from "../image/hosting-professional.png";
+import hosting from "../../image/hosting-basic.png";
+import advanced from "../../image/hosting-advanced.png";
+import professional from "../../image/hosting-professional.png";
+import "./pricing.css";
 
-function Pricing() {
+const Pricing = () => {
 
-    let pricing = [
+    const pricing = [
         {
             title: "Basic",
             image: hosting,
@@ -52,7 +53,7 @@ function Pricing() {
                 <div className="container">
                     {pricing.map(item => {
                         return (
-                            <div className="box">
+                            <div className="box" key={item.title}>
                                 <div className="title">{item.title}</div>
                                 <img src={item.image} alt="" />
                                 <div className="price">

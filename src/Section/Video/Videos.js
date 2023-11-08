@@ -1,7 +1,8 @@
-import preview from "../image/video-preview.jpg";
+import preview from "../../image/video-preview.jpg";
 import { FaRandom } from "react-icons/fa";
+import "./video.css";
 
-function Videos() {
+const Videos = () => {
     return (
         <div>
             <div className="videos" id="videos">

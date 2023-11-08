@@ -1,13 +1,14 @@
-import events from "../image/events.png";
+import events from "../../image/events.png";
+import "./events.css";
 
-function Events() {
-    let Event = [
+const Events = () => {
+    const event = [
         {
             number: 15,
             title: "Days"
         },
         {
-            number: 80,
+            number: "08",
             title: "Days"
         },
         {
@@ -29,16 +30,14 @@ function Events() {
                     <img src={events} alt="" />
                     <div className="info">
                         <div className="time">
-                            {Event.map(item => {
+                            {event.map(item => {
                                 return (
-                                    <div className="unit">
+                                    <div className="unit" key={item.title}>
                                         <span className="days">{item.number}</span>
                                         <span>{item.title}</span>
                                     </div>
                                 )
                             })}
-
-
                         </div>
                         <h2 className="title">Tech Masters Event 2021</h2>
                         <p className="description">

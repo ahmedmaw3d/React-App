@@ -1,10 +1,10 @@
-import skills from "../image/skills.png";
+import skills from "../../image/skills.png";
+import "./skills.css";
+
+const Skills = () => {
 
 
-function Skills() {
-
-
-    let skill = [
+    const skill = [
         {
             name: "HTML",
             number: "80%",
@@ -39,10 +39,10 @@ function Skills() {
                     <div className="skills">
                         {skill.map(item => {
                             return (
-                                <div className="skill">
+                                <div className="skill" key={item.name}>
                                     <h3>{item.name}<span>{item.number}</span></h3>
                                     <div className="the-progress">
-                                        <span>{item.width}</span>
+                                        <span style={{item,}}></span>
                                     </div>
                                 </div>
                             )

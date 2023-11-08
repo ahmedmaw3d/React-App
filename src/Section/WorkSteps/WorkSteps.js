@@ -1,10 +1,12 @@
-import work from "../image/work-steps.png";
-import work1 from "../image/work-steps-1.png";
-import work2 from "../image/work-steps-2.png";
-import work3 from "../image/work-steps-3.png";
-function WorkSteps() {
+import work from "../../image/work-steps.png";
+import work1 from "../../image/work-steps-1.png";
+import work2 from "../../image/work-steps-2.png";
+import work3 from "../../image/work-steps-3.png";
+import "./workSteps.css";
 
-    let Works = [
+const WorkSteps = () => {
+
+    const works = [
         {
             image: work1,
             title: "Business Analysis",
@@ -20,7 +22,7 @@ function WorkSteps() {
             title: "Developement",
             desc: "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Enim nesciunt obcaecati quisquam quis laborum recusandae debitis vel"
         }
-    ]
+    ];
 
     return (
         <div>
@@ -29,9 +31,9 @@ function WorkSteps() {
                 <div className="container">
                     <img src={work} alt="" className="image" />
                     <div className="info">
-                        {Works.map(item => {
+                        {works.map(item => {
                             return (
-                                <div className="box">
+                                <div className="box" key={item.title}>
                                     <img src={item.image} alt="" />
                                     <div className="text">
                                         <h3>{item.title}</h3>

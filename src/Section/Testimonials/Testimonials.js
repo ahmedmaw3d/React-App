@@ -1,17 +1,16 @@
-import avatar1 from "../image/avatar-01.png";
-import avatar2 from "../image/avatar-02.png";
-import avatar3 from "../image/avatar-03.png";
-import avatar4 from "../image/avatar-04.png";
-import avatar5 from "../image/avatar-05.png";
-import avatar6 from "../image/avatar-06.png";
+import avatar1 from "../../image/avatar-01.png";
+import avatar2 from "../../image/avatar-02.png";
+import avatar3 from "../../image/avatar-03.png";
+import avatar4 from "../../image/avatar-04.png";
+import avatar5 from "../../image/avatar-05.png";
+import avatar6 from "../../image/avatar-06.png";
 import { BsStarFill } from "react-icons/bs";
-import { AiOutlineStar } from "react-icons/ai"
-function Testimonials() {
+import { AiOutlineStar } from "react-icons/ai";
+import "./testimonials.css";
 
-
-    let testimonialsData = [
+const Testimonials = () => {
+    const testimonialsData = [
         {
-
             name: "Mohamed Farag",
             desc: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Maiores et reiciendis voluptatum, amet est natusquaerat ducimus",
             title: "Full Stack Developer",
@@ -24,7 +23,6 @@ function Testimonials() {
             ]
         },
         {
-
             name: "Mohamed Ibrahim",
             desc: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Maiores et reiciendis voluptatum, amet est natusquaerat ducimus",
             title: "Full Stack Developer",
@@ -37,7 +35,6 @@ function Testimonials() {
             ]
         },
         {
-
             name: "Shady Nabil",
             desc: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Maiores et reiciendis voluptatum, amet est natusquaerat ducimus",
             title: "Full Stack Developer",
@@ -50,7 +47,6 @@ function Testimonials() {
             ]
         },
         {
-
             name: "Amr Hendawy",
             desc: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Maiores et reiciendis voluptatum, amet est natusquaerat ducimus",
             title: "Full Stack Developer",
@@ -58,10 +54,8 @@ function Testimonials() {
             stars: [
                 1, 2, 3, 4, 5
             ]
-
         },
         {
-
             name: "Sherief Ashraf",
             desc: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Maiores et reiciendis voluptatum, amet est natusquaerat ducimus",
             title: "Full Stack Developer",
@@ -72,10 +66,8 @@ function Testimonials() {
             emptyStars: [
                 1, 2
             ]
-
         },
         {
-
             name: "Osama Mohamed",
             desc: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Maiores et reiciendis voluptatum, amet est natusquaerat ducimus",
             title: "Full Stack Developer",
@@ -86,23 +78,16 @@ function Testimonials() {
             emptyStars: [
                 1, 2
             ]
-
-
         },
-
-
-    ]
-
-
-
+    ];
     return (
         <div>
             <div className="testimonials" id="testimonials">
                 <h2 className="main-title">Testimonials</h2>
                 <div className="container">
-                    {testimonialsData?.map((item, index) => {
+                    {testimonialsData?.map(item => {
                         return (
-                            <div className="box" key={item.name}>
+                            <div className="box" key={item.title}>
                                 <img src={item.image} alt="" />
                                 <h3>{item.name}</h3>
                                 <span className="title">{item.title}</span>
